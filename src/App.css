@@ -1,0 +1,142 @@
+/* App.css */
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Background Image for Game and Start Screen */
+.start-screen, .game-screen {
+  background-image: url('https://media.istockphoto.com/id/93293217/photo/blue-eye.jpg?s=612x612&w=0&k=20&c=hsOjQyI-mXdazbNEBqjJB32ln7v_1g5l9SnkyVoriY0=E'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.start-screen {
+  text-align: center;
+}
+
+.start-btn {
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.start-btn:hover {
+  background-color: #45a049;
+}
+
+.game-screen {
+  text-align: center;
+}
+
+.stop-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.stop-btn:hover {
+  background-color: #e53935;
+}
+
+.game-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Color Blocks Layout */
+.color-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.color-block {
+  width: 120px;
+  height: 120px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.color-block:hover {
+  opacity: 0.8;
+}
+
+.stats {
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+/* Additional Styling for Title and Text */
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+}
+/* App.css */
+
+/* Game Over Screen */
+.game-over {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.game-over h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.game-over p {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.game-over button {
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.game-over button:hover {
+  background-color: #45a049;
+}
